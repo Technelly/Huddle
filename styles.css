@@ -15,9 +15,9 @@ body {
   box-sizing: border-box;
 }
 
-#container {
+/* #container {
   min-height: 100%;
-}
+} */
   /* .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); } */
   h1 {
@@ -35,25 +35,29 @@ body {
 
 .logo-image {
   height: 30px;
+  text-align: left;
 }
 
 .intro {
   padding-left: 50px;
   overflow: auto;
 }
-
+/* mockup */
 .illustration {
   float: left;
   margin-right: 50px;
-
 }
 
+.small-screen {
+  display: none;
+}
 
 button {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 100px;
   padding: 8px 30px;
   font-family: 'Open Sans', sans-serif;
+  color: #675b5b;
 }
 
 .text {
@@ -63,14 +67,14 @@ button {
 footer {
 
   height: 100px;
-  position: relative;
   text-align: right;
-padding-right: 50px;
-padding-top: 20px;
+  padding-right: 50px;
+  /* padding-bottom: 30px; */
+  margin-top: 30px;
 }
 
 a {
-  border-radius: 90%;
+  border-radius: 100%;
   border: 1px solid #fff;
   padding: 5px 10px;
   margin: 5px;
@@ -81,7 +85,7 @@ a {
 /* social media icons hover effect */
 
 .fa-facebook-f:hover {
-  color: #3b5998
+  color: #3b5998;
 }
 
 .fa-twitter:hover {
@@ -90,4 +94,80 @@ a {
 
 .fa-instagram:hover {
   color: #3f729b;
+}
+
+
+@media(max-width:767px){
+  .illustration {
+    width: 100%;
+    padding-right: 50px;
+  }
+  /* .text{
+    font-size: 15px;
+  } */
+
+  /* h1 {
+    line-height: 1.5rem;
+  } */
+
+footer{
+  margin-top: 63px;
+}
+
+}
+
+@media (min-width: 991) {
+  .illustration {
+    float: left;
+    margin-right: 50px;
+  }
+}
+
+@media(max-width: 575px) {
+  .illustration {
+width: 100%;
+padding-bottom: 50px;
+padding-right: 0;
+  }
+  .intro {
+    padding-right: 50px;
+  }
+
+  .center {
+    padding: 8px 70px;
+    color: #674BAF;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 45px;
+    padding-bottom: 30px;
+    height: 50%;
+  }
+/* mobile background image */
+  body {
+    background-image: url(images/bg-mobile.svg);
+
+  }
+  .text {
+    margin-right: auto;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+  }
+/* line breaks */
+.large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: block;
+  }
+
+  .button-div {
+    text-align: center;
+  }
+
 }
