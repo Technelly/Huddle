@@ -39,7 +39,7 @@ body {
 }
 
 .intro {
-  padding-left: 50px;
+  padding-left: 40px;
   overflow: auto;
 }
 /* mockup */
@@ -55,7 +55,7 @@ body {
 button {
   cursor: pointer;
   border-radius: 100px;
-  padding: 8px 30px;
+  padding: 8px 40px;
   font-family: 'Open Sans', sans-serif;
   color: #675b5b;
 }
@@ -97,6 +97,13 @@ a {
 }
 
 
+@media (min-width: 991) {
+  .illustration {
+    float: left;
+    margin-right: 50px;
+  }
+}
+
 @media(max-width:767px){
   .illustration {
     width: 100%;
@@ -110,18 +117,12 @@ a {
     line-height: 1.5rem;
   } */
 
-footer{
+footer{ {
   margin-top: 63px;
 }
 
 }
 
-@media (min-width: 991) {
-  .illustration {
-    float: left;
-    margin-right: 50px;
-  }
-}
 
 @media(max-width: 575px) {
   .illustration {
@@ -155,9 +156,14 @@ padding-right: 0;
     text-align: center;
   }
 
+  h1 {
+    font-family: inherit;
+  }
+
   p {
     font-size: 20px;
   }
+
 /* line breaks */
 .large-screen {
     display: none;
@@ -165,6 +171,11 @@ padding-right: 0;
   .small-screen {
     display: block;
   }
+
+  .heading {
+    display: none;
+  }
+
 
   .button-div {
     text-align: center;
